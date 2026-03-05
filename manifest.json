@@ -1,0 +1,65 @@
+{
+    "name": "Ricardo Rios Curriculum Vitae",
+    "short_name": "Rios CV",
+    "description": "Curriculum Vitae de Ricardo Alonso Rios Monrreal - Desarrollador de Software & Administrador de Sistemas TI",
+    "start_url": "./index.html",
+    "scope": "./",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "language": "es-MX",
+    "orientation": "portrait-primary",
+    "categories": ["productivity", "business"],
+    "icons": [
+        {
+            "src": "./imagenes/16.jpg",
+            "sizes": "16x16",
+            "type": "image/jpeg"
+        },
+        {
+            "src": "./imagenes/32.jpg",
+            "sizes": "32x32",
+            "type": "image/jpeg"
+        },
+        {
+            "src": "./imagenes/64.jpg",
+            "sizes": "64x64",
+            "type": "image/jpeg"
+        },
+        {
+            "src": "./imagenes/96.jpg",
+            "sizes": "96x96",
+            "type": "image/jpeg"
+        },
+        {
+            "src": "./imagenes/128.jpg",
+            "sizes": "128x128",
+            "type": "image/jpeg"
+        },
+        {
+            "src": "./imagenes/192.jpg",
+            "sizes": "192x192",
+            "type": "image/jpeg"
+        },
+        {
+            "src": "./imagenes/256.jpg",
+            "sizes": "256x256",
+            "type": "image/jpeg"
+        },
+        {
+            "src": "./imagenes/384.jpg",
+            "sizes": "384x384",
+            "type": "image/jpeg"
+        },
+        {
+            "src": "./imagenes/512.jpg",
+            "sizes": "512x512",
+            "type": "image/jpeg"
+        },
+        {
+            "src": "./imagenes/1024.jpg",
+            "sizes": "1024x1024",
+            "type": "image/jpeg"
+        }
+    ]
+}

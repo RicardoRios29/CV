@@ -1,0 +1,173 @@
+/* Estilos generales básicos */
+html {
+    scroll-behavior: smooth; /* Esto hace que baje suavemente al dar clic */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Contenedor para centrar el contenido */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Encabezado Principal */
+.main-header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.main-header h2 {
+    font-weight: normal;
+    color: #bdc3c7;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+/* Enlaces del encabezado */
+.header-links {
+    margin-top: 15px;
+}
+
+.header-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.header-links a:hover {
+    background-color: white;
+    color: #2c3e50;
+}
+
+/* Botón Principal (Llamada a la acción) */
+.btn-primary {
+    display: inline-block;
+    background-color: #e67e22; /* Naranja */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #d35400;
+}
+
+/* Secciones */
+.section {
+    padding: 30px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.bg-grey {
+    background-color: #f4f4f4;
+}
+
+h3 {
+    color: #2c3e50;
+    border-left: 5px solid #e67e22;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+/* Grid sencilla */
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    min-width: 200px;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+.card h4 {
+    margin-top: 0;
+    color: #2980b9;
+}
+
+/* Estilos de Experiencia y Proyectos */
+.job-item, .project-item {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.job-item h4, .project-item h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+/* Formulario */
+.simple-form {
+    max-width: 500px;
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.simple-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.simple-form input, 
+.simple-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Footer */
+.main-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    .header-links a {
+        display: block;
+        margin: 5px auto;
+        width: fit-content;
+    }
+}
