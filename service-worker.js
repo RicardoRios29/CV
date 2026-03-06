@@ -1,22 +1,21 @@
 const CACHE_NAME = 'mi-pwa-cache-v1';
 const ASSETS = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/style.css',
-  '/imagenes/16.jpg',
-  '/imagenes/32.jpg',
-  '/imagenes/64.jpg',
-  '/imagenes/96.jpg',
-  '/imagenes/128.jpg',
-  '/imagenes/192.jpg',
-  '/imagenes/256.jpg',
-  '/imagenes/384.jpg',
-  '/imagenes/512.jpg',
-  '/imagenes/1024.jpg'
+  './',
+  './index.html',
+  './manifest.json',
+  './style.css',
+  './imagenes/16.jpg',
+  './imagenes/32.jpg',
+  './imagenes/64.jpg',
+  './imagenes/96.jpg',
+  './imagenes/128.jpg',
+  './imagenes/192.jpg',
+  './imagenes/256.jpg',
+  './imagenes/384.jpg',
+  './imagenes/512.jpg',
+  './imagenes/1024.jpg'
 ];
 
-// Instalar el service worker y cachear los archivos
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => cache.addAll(ASSETS))
@@ -24,7 +23,6 @@ self.addEventListener('install', (event) => {
   self.skipWaiting();
 });
 
-// Activar el service worker y limpiar caches antiguos
 self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys().then(keys => Promise.all(
@@ -34,7 +32,6 @@ self.addEventListener('activate', (event) => {
   self.clients.claim();
 });
 
-// Manejar las peticiones: servir desde cache si está disponible, sino de la red
 self.addEventListener('fetch', (event) => {
   event.respondWith(
     caches.match(event.request).then(res => res || fetch(event.request))
